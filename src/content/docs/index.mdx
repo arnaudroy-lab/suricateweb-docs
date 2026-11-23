@@ -1,0 +1,34 @@
+---
+title: Documentation SuricateWeb
+description: Prenez en main SuricateWeb, la surveillance de sites web qui vous prévient avant vos clients.
+template: splash
+hero:
+  tagline: Détectez les problèmes de votre site avant vos clients. Défiguration, piratage, domaine, disponibilité, WordPress et PrestaShop.
+  image:
+    file: ../../assets/fr/tableau-de-bord.webp
+    alt: Tableau de bord SuricateWeb avec huit sites regroupés par client
+  actions:
+    - text: Démarrer
+      link: /get-started/
+      icon: right-arrow
+    - text: Installer sur votre serveur
+      link: /self-hosting/
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid stagger>
+  <Card title="Être prévenu" icon="comment">
+    Les alertes arrivent sur [Telegram](/alerts/telegram/) et [Slack](/alerts/slack/), avec la gravité, ce qui a changé et une photo de la page.
+  </Card>
+  <Card title="Ce qui est surveillé" icon="magnifier">
+    Contenu, scripts injectés, certificat, DNS, nom de domaine, disponibilité : [la liste complète](/monitoring/what-is-monitored/).
+  </Card>
+  <Card title="WordPress et PrestaShop" icon="puzzle">
+    Un petit plugin relève les mises à jour, l'intégrité des fichiers, la santé du serveur et l'activité : [installation](/cms/install/).
+  </Card>
+  <Card title="Chez vous ou hébergé" icon="rocket">
+    Le cœur est libre (AGPL-3.0) : [installez-le sur votre serveur](/self-hosting/) ou utilisez la version hébergée.
+  </Card>
+</CardGrid>

@@ -1,0 +1,12 @@
+/* Couleurs de SuricateWeb (bleu #0b63ae, accent clair #159bfa) sur les variables de Starlight. */
+:root {
+  --sl-color-accent-low: #d9ebfb;
+  --sl-color-accent: #0b63ae;
+  --sl-color-accent-high: #084a85;
+}
+:root[data-theme='dark'] {
+  --sl-color-accent-low: #0a2a4d;
+  --sl-color-accent: #159bfa;
+  --sl-color-accent-high: #8fd0ff;
+}
+.sl-markdown-content img { border-radius: 10px; border: 1px solid var(--sl-color-gray-5); }

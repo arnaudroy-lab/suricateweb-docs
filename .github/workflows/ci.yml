@@ -1,0 +1,32 @@
+# Intégration continue : la documentation se construit, ses liens et ses traductions se vérifient, et l'image Docker se construit.
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  site:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      # Construction puis contrôle : pages françaises et anglaises jumelles, liens et images internes, ancres.
+      - run: npm test
+
+  image:
+    runs-on: ubuntu-latest
+    needs: site
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t suricateweb-docs:ci .
+      - name: L'image démarre et répond
+        run: |
+          docker run -d --name docs -p 8080:8080 suricateweb-docs:ci
+          for i in $(seq 1 20); do curl -fsS http://127.0.0.1:8080/healthz && break; sleep 1; done
+          curl -fsS http://127.0.0.1:8080/ | grep -q "Documentation SuricateWeb"
+          curl -fsS http://127.0.0.1:8080/en/ | grep -q "SuricateWeb documentation"

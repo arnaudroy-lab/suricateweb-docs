@@ -1,0 +1,29 @@
+{
+  "name": "suricateweb-docs",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Documentation en ligne de SuricateWeb (français et anglais), construite avec Astro Starlight.",
+  "author": "Arnaud Roy",
+  "license": "AGPL-3.0-only",
+  "homepage": "https://docs.suricateweb.fr",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arnaudroy-lab/suricateweb-docs.git"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "node scripts/check.mjs",
+    "test": "npm run build && npm run check"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "0.43.1",
+    "astro": "7.4.13",
+    "sharp": "0.35.5"
+  }
+}

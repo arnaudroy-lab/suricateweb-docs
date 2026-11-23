@@ -1,0 +1,27 @@
+# Déploiement Dokploy (type « Compose ») ou essai local : `docker compose up -d --build`, puis http://localhost:8080 avec le fichier docker-compose.local.yml.
+# Dokploy raccorde lui-même le domaine (onglet Domains, service `docs`, port 8080) : aucune étiquette Traefik à écrire ici, aucun port publié.
+services:
+  docs:
+    build:
+      context: .
+      args:
+        # Adresse publique du site : liens canoniques, plan du site, hreflang. À fixer dans l'onglet Environment de Dokploy.
+        SITE_URL: ${SITE_URL:-https://docs.suricateweb.fr}
+    image: suricateweb-docs:latest
+    restart: unless-stopped
+    expose:
+      - "8080"
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:8080/healthz"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+    # Conteneur sans privilèges : système de fichiers en lecture seule (nginx n'écrit que dans /tmp), aucune capacité Linux.
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
