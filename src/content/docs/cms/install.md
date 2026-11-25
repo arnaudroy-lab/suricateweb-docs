@@ -31,7 +31,7 @@ Pour chaque site relié au plugin, la liste affiche ce que le dernier relevé a 
 
 | Pastille | Ce qu'elle dit |
 |---|---|
-| **WP v1.8.0** / **PS v1.6.1** | la version du **plugin** installé sur le site. **Verte** : à jour. **Orange** avec ↑ : une version plus récente est livrée. **Rouge** « non joint » : le dernier relevé a échoué. **Grise** « en attente » : aucun relevé pour le moment |
+| **WP v1.8.1** / **PS v1.6.1** | la version du **plugin** installé sur le site. **Verte** : à jour. **Orange** avec ↑ : une version plus récente est livrée. **Rouge** « non joint » : le dernier relevé a échoué. **Grise** « en attente » : aucun relevé pour le moment |
 | **PHP 8.3.14** | la version de PHP du site. **Orange** quand la fin du support de sécurité de cette branche approche (moins de 90 jours), **rouge** quand elle est terminée |
 | **WordPress 6.7.1** / **PrestaShop 8.1.7** | la version du CMS, **orange** avec ↑ quand une version plus récente existe |
 | **4 mises à jour** | le nombre de mises à jour en attente : le CMS, plus chaque extension (ou module) et chaque thème qui en annonce une. C'est le même compte que dans le rapport mensuel. Le détail apparaît au survol, la liste complète dans l'onglet **Mises à jour** |

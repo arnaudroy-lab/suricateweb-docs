@@ -31,7 +31,7 @@ For each site linked to the plugin, the list shows what the last reading found, 
 
 | Badge | What it says |
 |---|---|
-| **WP v1.8.0** / **PS v1.6.1** | the **plugin** version installed on the site. **Green**: up to date. **Orange** with ↑: a newer version is shipped. **Red** “unreachable”: the last reading failed. **Grey** “pending”: no reading yet |
+| **WP v1.8.1** / **PS v1.6.1** | the **plugin** version installed on the site. **Green**: up to date. **Orange** with ↑: a newer version is shipped. **Red** “unreachable”: the last reading failed. **Grey** “pending”: no reading yet |
 | **PHP 8.3.14** | the site's PHP version. **Orange** when security support for that branch is about to end (within 90 days), **red** once it has ended |
 | **WordPress 6.7.1** / **PrestaShop 8.1.7** | the CMS version, **orange** with ↑ when a newer version exists |
 | **4 updates** | the number of pending updates: the CMS, plus each plugin (or module) and each theme that announces one. It is the same count as in the monthly report. The detail shows on hover, the full list in the **Updates** tab |
