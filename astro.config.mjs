@@ -20,7 +20,7 @@ export default defineConfig({
       },
       social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/arnaudroy-lab/suricateweb' }],
       editLink: { baseUrl: 'https://github.com/arnaudroy-lab/suricateweb-docs/edit/main/' },
-      customCss: ['./src/styles/theme.css', './src/styles/video.css'],
+      customCss: ['./src/styles/theme.css', './src/styles/video.css', './src/styles/home.css'],
       // Vidéos YouTube « au clic » : le script n'appelle YouTube qu'après un clic (voir public/video-embed.js).
       head: [{ tag: 'script', attrs: { src: '/video-embed.js', defer: true } }],
       sidebar: [

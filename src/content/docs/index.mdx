@@ -3,22 +3,33 @@ title: Documentation SuricateWeb
 description: Prenez en main SuricateWeb, la surveillance de sites web qui vous prévient avant vos clients.
 template: splash
 hero:
-  tagline: Détectez les problèmes de votre site avant vos clients. Défiguration, piratage, domaine, disponibilité, WordPress et PrestaShop.
+  title: SuricateWeb
+  tagline: Détectez les problèmes de votre site avant vos clients. Défiguration, piratage, nom de domaine, disponibilité, WordPress et PrestaShop.
   image:
-    file: ../../assets/fr/tableau-de-bord.webp
-    alt: Tableau de bord SuricateWeb avec huit sites regroupés par client
+    file: ../../assets/logo-hero.webp
+    alt: "Logo de SuricateWeb : un suricate qui guette avec des jumelles, à côté d'une cloche d'alerte"
   actions:
     - text: Démarrer
       link: /get-started/
       icon: right-arrow
+    - text: Essayer la version hébergée
+      link: https://suricateweb.fr
+      variant: secondary
+      icon: external
+      attrs:
+        target: _blank
+        rel: noopener
     - text: Installer sur votre serveur
       link: /self-hosting/
       variant: minimal
+      icon: right-arrow
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
 
-<CardGrid stagger>
+## L'essentiel
+
+<CardGrid>
   <Card title="Être prévenu" icon="comment">
     Les alertes arrivent sur [Telegram](/alerts/telegram/) et [Slack](/alerts/slack/), avec la gravité, ce qui a changé et une photo de la page.
   </Card>
@@ -32,3 +43,14 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
     Le cœur est libre (AGPL-3.0) : [installez-le sur votre serveur](/self-hosting/) ou utilisez la version hébergée.
   </Card>
 </CardGrid>
+
+## Par où commencer
+
+<CardGrid>
+  <LinkCard title="Ajouter votre premier site" description="Quelques minutes, avec une vidéo pas à pas." href="/get-started/" />
+  <LinkCard title="Installer le plugin" description="WordPress ou PrestaShop : versions, intégrité, santé." href="/cms/install/" />
+  <LinkCard title="Recevoir les alertes" description="Brancher Telegram ou Slack." href="/alerts/telegram/" />
+  <LinkCard title="Santé et durcissement" description="Disque, débogage, HTTPS et réglages de sécurité." href="/cms/health-and-hardening/" />
+</CardGrid>
+
+Une question ? La [FAQ](/faq/) répond aux plus fréquentes.

@@ -3,22 +3,33 @@ title: SuricateWeb documentation
 description: Get started with SuricateWeb, the website monitoring that warns you before your customers notice.
 template: splash
 hero:
-  tagline: Spot problems with your website before your customers do. Defacement, hacking, domain, uptime, WordPress and PrestaShop.
+  title: SuricateWeb
+  tagline: Spot problems with your website before your customers do. Defacement, hacking, domain name, uptime, WordPress and PrestaShop.
   image:
-    file: ../../../assets/en/tableau-de-bord.webp
-    alt: SuricateWeb dashboard with eight sites grouped by client
+    file: ../../../assets/logo-hero.webp
+    alt: "SuricateWeb logo: a meerkat on the lookout with binoculars, next to an alert bell"
   actions:
     - text: Get started
       link: /en/get-started/
       icon: right-arrow
+    - text: Try the hosted version
+      link: https://suricateweb.fr
+      variant: secondary
+      icon: external
+      attrs:
+        target: _blank
+        rel: noopener
     - text: Install on your server
       link: /en/self-hosting/
       variant: minimal
+      icon: right-arrow
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
 
-<CardGrid stagger>
+## The essentials
+
+<CardGrid>
   <Card title="Get alerted" icon="comment">
     Alerts reach you on [Telegram](/en/alerts/telegram/) and [Slack](/en/alerts/slack/), with the severity, what changed and a photo of the page.
   </Card>
@@ -32,3 +43,14 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
     The core is free software (AGPL-3.0): [install it on your server](/en/self-hosting/) or use the hosted version.
   </Card>
 </CardGrid>
+
+## Where to start
+
+<CardGrid>
+  <LinkCard title="Add your first site" description="A few minutes, with a step-by-step video." href="/en/get-started/" />
+  <LinkCard title="Install the plugin" description="WordPress or PrestaShop: versions, integrity, health." href="/en/cms/install/" />
+  <LinkCard title="Receive alerts" description="Connect Telegram or Slack." href="/en/alerts/telegram/" />
+  <LinkCard title="Health and hardening" description="Disk, debugging, HTTPS and security settings." href="/en/cms/health-and-hardening/" />
+</CardGrid>
+
+Got a question? The [FAQ](/en/faq/) answers the most common ones.

@@ -1,6 +1,6 @@
 {
   "name": "suricateweb-docs",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "private": true,
   "description": "Documentation en ligne de SuricateWeb (français et anglais), construite avec Astro Starlight.",
   "author": "Arnaud Roy",
