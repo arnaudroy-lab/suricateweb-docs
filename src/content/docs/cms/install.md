@@ -21,14 +21,14 @@ Un petit plugin, installé sur votre site, permet à SuricateWeb de lire ce qu'u
 
 WordPress :
 
-<div class="video-embed" data-youtube="knxh3RBF0HI" data-title="Prise en charge de WordPress" data-play="Lire la vidéo" data-privacy="La vidéo est chargée depuis YouTube uniquement après votre clic.">
-<a href="https://youtu.be/knxh3RBF0HI">Ouvrir sur YouTube : Prise en charge de WordPress</a>
+<div class="video-embed" data-youtube="knxh3RBF0HI" data-title="Activer la prise en charge de WordPress dans SuricateWeb" data-play="Lire la vidéo" data-privacy="La vidéo est chargée depuis YouTube uniquement après votre clic.">
+<a href="https://youtu.be/knxh3RBF0HI">Ouvrir sur YouTube : Activer la prise en charge de WordPress dans SuricateWeb</a>
 </div>
 
 PrestaShop :
 
-<div class="video-embed" data-youtube="FWANjLkVHvc" data-title="Prise en charge de PrestaShop" data-play="Lire la vidéo" data-privacy="La vidéo est chargée depuis YouTube uniquement après votre clic.">
-<a href="https://youtu.be/FWANjLkVHvc">Ouvrir sur YouTube : Prise en charge de PrestaShop</a>
+<div class="video-embed" data-youtube="FWANjLkVHvc" data-title="Activer la prise en charge de PrestaShop dans SuricateWeb" data-play="Lire la vidéo" data-privacy="La vidéo est chargée depuis YouTube uniquement après votre clic.">
+<a href="https://youtu.be/FWANjLkVHvc">Ouvrir sur YouTube : Activer la prise en charge de PrestaShop dans SuricateWeb</a>
 </div>
 
 :::note
