@@ -31,7 +31,7 @@ L'image contient Chromium pour les captures. Le volume `/data` contient **tout**
 ## Sur Dokploy
 
 1. **Créer l'application** : *Create Application*, source Git, *Build Type* **Dockerfile**.
-2. **Variables d'environnement** : `SURICATE_USER`, `SURICATE_PASSWORD` (obligatoire, 8 caractères au moins), `TRUST_PROXY=1` (déjà dans l'image).
+2. **Variables d'environnement** : `SURICATE_USER`, `SURICATE_PASSWORD` (obligatoire, 8 caractères au moins), `TRUST_PROXY=1` (déjà dans l'image ; `2` si un CDN précède votre reverse proxy).
 3. **Volume persistant** (*Advanced › Volumes*) : type **Volume**, chemin de montage `/data`.
 4. **Domaine** : votre domaine, **port `3000`**, HTTPS activé (Let's Encrypt).
 5. **Déployer.**
@@ -45,7 +45,7 @@ L'image contient Chromium pour les captures. Le volume `/data` contient **tout**
 | `PORT` | `3000` | Port d'écoute |
 | `HOST` | `127.0.0.1` | Interface d'écoute (`0.0.0.0` pour exposer sur le réseau) |
 | `DATA_DIR` | `./data` | Base SQLite et captures d'écran |
-| `TRUST_PROXY` | — | `1` derrière un reverse proxy (cookie `Secure`, IP client) |
+| `TRUST_PROXY` | — | nombre de reverse proxys de confiance : `1` derrière Traefik ou nginx, `2` si un CDN les précède (cookie `Secure`, IP client lue en partant de la fin de `X-Forwarded-For`) |
 | `CHROME_PATH` | détecté | Chrome ou Chromium pour les captures |
 | `CHROME_WS_URL` | — | Chrome **distant** (conteneur Browserless, par exemple) |
 | `SCREENSHOT_KEEP_DEFAULT` | `168` | Captures planifiées conservées par site |

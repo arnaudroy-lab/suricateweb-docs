@@ -10,7 +10,7 @@ A small plugin, installed on your site, lets SuricateWeb read what an outside ch
 ## Installation
 
 1. In SuricateWeb, open the site (**Edit**), **WordPress / PrestaShop** section: choose the CMS. A **token** is generated.
-2. Download the plugin from the same section (WordPress: a `.zip` archive; PrestaShop: a module `.zip`).
+2. Download the plugin from the same section (WordPress: a `.zip` archive; PrestaShop: a module `.zip`). The **WordPress plugin** and **PrestaShop plugin** buttons at the top of the sites list offer it too, with the shipped **version**.
 3. Install it like any extension, then **activate** it.
 4. Paste the token into the plugin's settings:
    - **WordPress**: *Tools › SuricateWeb › Settings*
@@ -24,6 +24,24 @@ SuricateWeb reads the plugin **every 12 hours** by default (adjustable from 1 ho
 ## Monitored updates
 
 The **Updates** tab shows the core, the plugins (or modules) and the themes, with the **installed version** and the **available version**. An alert goes out when an update is late: **7 days** by default (adjustable), **critical** for the core after 30 days. The **end of PHP support** is also reported.
+
+## In the sites list
+
+For each site linked to the plugin, the list shows what the last reading found, without opening the site:
+
+| Badge | What it says |
+|---|---|
+| **WP v1.8.0** / **PS v1.6.1** | the **plugin** version installed on the site. **Green**: up to date. **Orange** with ↑: a newer version is shipped. **Red** “unreachable”: the last reading failed. **Grey** “pending”: no reading yet |
+| **PHP 8.3.14** | the site's PHP version. **Orange** when security support for that branch is about to end (within 90 days), **red** once it has ended |
+| **WordPress 6.7.1** / **PrestaShop 8.1.7** | the CMS version, **orange** with ↑ when a newer version exists |
+| **4 updates** | the number of pending updates: the CMS, plus each plugin (or module) and each theme that announces one. It is the same count as in the monthly report. The detail shows on hover, the full list in the **Updates** tab |
+
+- Nothing is shown for a site without a CMS, in “domain only” mode, or until a reading has succeeded. If a later reading fails, the **last known value** stays displayed, and the plugin badge turns red.
+- On a narrow screen this column is hidden: an icon for the CMS link remains.
+
+### Download or update the plugin
+
+At the top of the list, **WordPress plugin** and **PrestaShop plugin** download the current archive, with its version. An orange marker, for example **1 ↑**, shows **how many sites** have an older plugin: time to replace the plugin on those sites. The buttons only appear if your access allows downloading plugins: a read-only guest does not see them.
 
 ## What travels
 

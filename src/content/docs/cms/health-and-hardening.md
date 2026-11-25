@@ -27,7 +27,7 @@ Le suivi se coupe site par site (*Modifier › WordPress / PrestaShop › Suivre
 
 ## Durcissement en un clic
 
-*WordPress, plugin 1.6 ou plus.* Dans l'onglet **Santé**, la carte **Durcissement** applique quelques réglages de sécurité, **un par un** ou d'un clic (**Appliquer les réglages sûrs**). SuricateWeb envoie l'ordre au plugin, puis relit l'état réel du site : l'interface n'affiche jamais ce qu'on espérait, seulement ce que le site confirme.
+*WordPress, plugin 1.6 ou plus.* Dans l'onglet **Santé**, la carte **Durcissement** applique quelques réglages de sécurité, **un par un** ou d'un clic (**Appliquer les réglages sûrs**). SuricateWeb envoie l'ordre au plugin, puis relit l'**état de santé** du site : l'interface n'affiche jamais ce qu'on espérait, seulement ce que le site confirme.
 
 | Mesure | Effet | Réglage sûr |
 |---|---|---|
@@ -41,3 +41,5 @@ Le suivi se coupe site par site (*Modifier › WordPress / PrestaShop › Suivre
 - Une mesure **déjà active sur le site** est signalée « Déjà actif sur le site » et reste intacte.
 - Aucune mesure ne bloque un administrateur connecté.
 - Appliquer un durcissement demande le droit d'**écrire sur le site** : un invité en lecture seule ne peut pas le faire.
+- Vous pouvez **activer plusieurs mesures à la suite** : la carte est bloquée le temps de l'envoi, et les ordres d'un même site partent l'un après l'autre. Seule la santé est relue (pas un relevé complet), et si un relevé complet est en cours, la relecture attend sa fin.
+- Si le plugin a accepté l'ordre mais que la relecture échoue, l'interface le dit à part : **« Appliqué, mais l'état du site n'a pas pu être relu »**. La mesure est bien appliquée ; **Actualiser** relit l'état.

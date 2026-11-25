@@ -27,7 +27,7 @@ Monitoring can be turned off per site (*Edit › WordPress / PrestaShop › Moni
 
 ## One-click hardening
 
-*WordPress, plugin 1.6 or later.* In the **Health** tab, the **Hardening** card applies a few security settings, **one by one** or in one click (**Apply safe settings**). SuricateWeb sends the order to the plugin, then reads back the site's real state: the interface never shows what was hoped for, only what the site confirms.
+*WordPress, plugin 1.6 or later.* In the **Health** tab, the **Hardening** card applies a few security settings, **one by one** or in one click (**Apply safe settings**). SuricateWeb sends the order to the plugin, then reads back the site's **health state**: the interface never shows what was hoped for, only what the site confirms.
 
 | Measure | Effect | Safe setting |
 |---|---|---|
@@ -41,3 +41,5 @@ Monitoring can be turned off per site (*Edit › WordPress / PrestaShop › Moni
 - A measure **already active on the site** is shown as “Already on in the site” and left untouched.
 - No measure blocks a logged-in administrator.
 - Applying hardening requires the right to **write to the site**: a read-only guest cannot do it.
+- You can **turn on several measures in a row**: the card is locked while an order is being sent, and the orders for one site go out one after the other. Only the health is read back (not a full reading), and if a full reading is in progress, the read-back waits for it to finish.
+- If the plugin accepted the order but the read-back fails, the interface says so separately: **“Applied, but the site state could not be read back”**. The measure is applied; **Refresh** reads the state again.

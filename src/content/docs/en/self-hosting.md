@@ -31,7 +31,7 @@ The image includes Chromium for screenshots. The `/data` volume holds **everythi
 ## On Dokploy
 
 1. **Create the application**: *Create Application*, Git source, *Build Type* **Dockerfile**.
-2. **Environment variables**: `SURICATE_USER`, `SURICATE_PASSWORD` (required, at least 8 characters), `TRUST_PROXY=1` (already in the image).
+2. **Environment variables**: `SURICATE_USER`, `SURICATE_PASSWORD` (required, at least 8 characters), `TRUST_PROXY=1` (already in the image; `2` if a CDN sits in front of your reverse proxy).
 3. **Persistent volume** (*Advanced › Volumes*): type **Volume**, mount path `/data`.
 4. **Domain**: your domain, **port `3000`**, HTTPS on (Let's Encrypt).
 5. **Deploy.**
@@ -45,7 +45,7 @@ The image includes Chromium for screenshots. The `/data` volume holds **everythi
 | `PORT` | `3000` | Listening port |
 | `HOST` | `127.0.0.1` | Listening interface (`0.0.0.0` to expose on the network) |
 | `DATA_DIR` | `./data` | SQLite database and screenshots |
-| `TRUST_PROXY` | — | `1` behind a reverse proxy (`Secure` cookie, client IP) |
+| `TRUST_PROXY` | — | number of trusted reverse proxies: `1` behind Traefik or nginx, `2` if a CDN sits in front of them (`Secure` cookie, client IP read from the end of `X-Forwarded-For`) |
 | `CHROME_PATH` | detected | Chrome or Chromium for screenshots |
 | `CHROME_WS_URL` | — | **Remote** Chrome (a Browserless container, for example) |
 | `SCREENSHOT_KEEP_DEFAULT` | `168` | Scheduled screenshots kept per site |

@@ -10,7 +10,7 @@ Un petit plugin, installé sur votre site, permet à SuricateWeb de lire ce qu'u
 ## Installation
 
 1. Dans SuricateWeb, ouvrez la fiche du site (**Modifier**), section **WordPress / PrestaShop** : choisissez le CMS. Un **jeton** est généré.
-2. Téléchargez le plugin depuis cette même section (WordPress : une archive `.zip` ; PrestaShop : un module `.zip`).
+2. Téléchargez le plugin depuis cette même section (WordPress : une archive `.zip` ; PrestaShop : un module `.zip`). Les boutons **Plugin WordPress** et **Plugin PrestaShop**, en haut de la liste des sites, le proposent aussi, avec la **version** livrée.
 3. Installez-le comme n'importe quelle extension, puis **activez-le**.
 4. Collez le jeton dans les réglages du plugin :
    - **WordPress** : *Outils › SuricateWeb › Réglages*
@@ -24,6 +24,24 @@ SuricateWeb relève le plugin **toutes les 12 heures** par défaut (réglable de
 ## Mises à jour surveillées
 
 L'onglet **Mises à jour** montre le noyau, les extensions (ou modules) et les thèmes, avec la **version installée** et la **version disponible**. Une alerte part quand une mise à jour tarde : **7 jours** par défaut (réglable), **critique** pour le noyau au bout de 30 jours. La **fin de support de PHP** est aussi signalée.
+
+## Dans la liste des sites
+
+Pour chaque site relié au plugin, la liste affiche ce que le dernier relevé a lu, sans ouvrir la fiche :
+
+| Pastille | Ce qu'elle dit |
+|---|---|
+| **WP v1.8.0** / **PS v1.6.1** | la version du **plugin** installé sur le site. **Verte** : à jour. **Orange** avec ↑ : une version plus récente est livrée. **Rouge** « non joint » : le dernier relevé a échoué. **Grise** « en attente » : aucun relevé pour le moment |
+| **PHP 8.3.14** | la version de PHP du site. **Orange** quand la fin du support de sécurité de cette branche approche (moins de 90 jours), **rouge** quand elle est terminée |
+| **WordPress 6.7.1** / **PrestaShop 8.1.7** | la version du CMS, **orange** avec ↑ quand une version plus récente existe |
+| **4 mises à jour** | le nombre de mises à jour en attente : le CMS, plus chaque extension (ou module) et chaque thème qui en annonce une. C'est le même compte que dans le rapport mensuel. Le détail apparaît au survol, la liste complète dans l'onglet **Mises à jour** |
+
+- Rien ne s'affiche pour un site sans CMS, en mode « domaine seul », ou tant qu'aucun relevé n'a réussi. Si un relevé échoue ensuite, la **dernière valeur connue** reste affichée, et la pastille du plugin passe au rouge.
+- Sur un écran étroit, cette colonne est masquée : il reste une icône du lien avec le CMS.
+
+### Télécharger ou mettre à jour le plugin
+
+En haut de la liste, **Plugin WordPress** et **Plugin PrestaShop** téléchargent l'archive actuelle, avec sa version. Un repère orange, par exemple **1 ↑**, indique **combien de sites** ont un plugin plus ancien : c'est le moment de remplacer le plugin sur ces sites. Les boutons n'apparaissent que si votre accès permet de télécharger les plugins : un invité en lecture seule ne les voit pas.
 
 ## Ce qui circule
 
