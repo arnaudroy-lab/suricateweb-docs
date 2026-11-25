@@ -59,3 +59,9 @@
   [data-has-hero] .sl-markdown-content .sl-link-card:hover { transform: none; }
 }
 @media (max-width: 50rem) { [data-has-hero] .hero img { width: min(70%, 15rem); } }
+
+/* Pleine largeur : le contenu n'est plus plafonné à --sl-content-width (67,5 rem) ; une marge latérale adaptative le garde lisible.
+   Les cartes se répartissent selon la place (4 colonnes sur grand écran, 2 sur tablette, 1 sur téléphone). */
+[data-has-hero] .sl-container { max-width: none; }
+[data-has-hero] .content-panel { padding-inline: clamp(1.25rem, 5vw, 6rem); }
+[data-has-hero] .sl-markdown-content .card-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); }
