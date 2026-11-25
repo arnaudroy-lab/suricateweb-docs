@@ -3,6 +3,10 @@ title: Intégrité et code suspect
 description: Fichiers modifiés, porte dérobée, code obfusqué et nouveaux comptes administrateurs.
 ---
 
+:::note[Version hébergée]
+Cette fonction fait partie du connecteur WordPress / PrestaShop, inclus dans la version hébergée. En auto-hébergement, activez-la avec `SURICATE_CMS=1` (voir [Installer le plugin](/cms/install/)).
+:::
+
 ![Onglet Sécurité d'un site WordPress : noyau conforme et extensions vérifiées une à une](../../../assets/fr/securite.webp)
 
 SuricateWeb voit le HTML d'un site, pas ses fichiers. Le plugin comble ce manque : il lit les fichiers **depuis le site**, là où ils sont. L'onglet **Sécurité** (sites WordPress et PrestaShop) en présente le résultat.

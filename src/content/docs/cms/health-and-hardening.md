@@ -3,6 +3,10 @@ title: Santé et durcissement
 description: Disque, débogage, tâches planifiées, HTTPS, et cinq réglages de sécurité activables en un clic.
 ---
 
+:::note[Version hébergée]
+Cette fonction fait partie du connecteur WordPress / PrestaShop, inclus dans la version hébergée. En auto-hébergement, activez-la avec `SURICATE_CMS=1` (voir [Installer le plugin](/cms/install/)).
+:::
+
 <div class="video-embed" data-youtube="4ANPUIwezE4" data-title="Comprendre les onglets Santé, Sécurité et Durcissement de SuricateWeb" data-play="Lire la vidéo" data-privacy="La vidéo est chargée depuis YouTube uniquement après votre clic.">
 <a href="https://youtu.be/4ANPUIwezE4">Ouvrir sur YouTube : Comprendre les onglets Santé, Sécurité et Durcissement de SuricateWeb</a>
 </div>

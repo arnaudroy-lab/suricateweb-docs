@@ -3,6 +3,10 @@ title: Activity log
 description: Logins, accounts and plugins on a WordPress site, with truncated IP addresses and 90 days of retention.
 ---
 
+:::note[Hosted version]
+This feature is part of the WordPress / PrestaShop connector, included in the hosted version. When self-hosting, turn it on with `SURICATE_CMS=1` (see [Install the plugin](/en/cms/install/)).
+:::
+
 *WordPress, plugin 1.7 or later.* The **Activity** tab shows what happened on the site, as read by the plugin:
 
 - successful and failed **logins**;

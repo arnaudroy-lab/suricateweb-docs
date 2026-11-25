@@ -3,6 +3,10 @@ title: Install the plugin
 description: Install the WordPress plugin or the PrestaShop module and link it to SuricateWeb with a token.
 ---
 
+:::note[Hosted version feature]
+The WordPress / PrestaShop connector is **included in the hosted version**. In the self-hosted core it is **off by default**: turn it on with `SURICATE_CMS=1` (see [Self-hosting](/en/self-hosting/)). When off, a site's page shows neither the WordPress / PrestaShop form nor the Updates, Security, Health and Activity tabs, and no reading is made.
+:::
+
 ![Updates tab of a WordPress site in SuricateWeb](../../../../assets/en/mises-a-jour.webp)
 
 A small plugin, installed on your site, lets SuricateWeb read what an outside check cannot see: the PHP version, **updates** to the core, plugins and themes, **file integrity**, administrator accounts and **server health**. The plugin **sends nothing by itself**: SuricateWeb comes to read it, with a token.

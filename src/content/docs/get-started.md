@@ -32,7 +32,7 @@ Sans canal de notification, les alertes restent visibles dans l'onglet **Alertes
 
 ## 3. Aller plus loin
 
-- Un site WordPress ou PrestaShop ? [Installez le plugin](/cms/install/) : mises à jour en retard, fichiers modifiés, comptes administrateurs, santé du serveur.
+- Un site WordPress ou PrestaShop ? Avec la version hébergée, [installez le plugin](/cms/install/) : mises à jour en retard, fichiers modifiés, comptes administrateurs, santé du serveur.
 - Plusieurs clients ? Rangez les sites par **groupe** (glisser-déposer) et partagez un **rapport mensuel** ou une **page de statut** publique.
 - Un domaine sans site web (messagerie, nom réservé) ? Choisissez le type **Domaine seul** : seuls le DNS et le registre sont surveillés.
 

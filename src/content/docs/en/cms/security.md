@@ -3,6 +3,10 @@ title: Integrity and suspicious code
 description: Modified files, backdoors, obfuscated code and new administrator accounts.
 ---
 
+:::note[Hosted version]
+This feature is part of the WordPress / PrestaShop connector, included in the hosted version. When self-hosting, turn it on with `SURICATE_CMS=1` (see [Install the plugin](/en/cms/install/)).
+:::
+
 ![Security tab of a WordPress site: compliant core and extensions checked one by one](../../../../assets/en/securite.webp)
 
 SuricateWeb sees a site's HTML, not its files. The plugin fills that gap: it reads the files **from the site itself**, where they are. The **Security** tab (WordPress and PrestaShop sites) presents the result.
