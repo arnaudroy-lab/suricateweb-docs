@@ -21,14 +21,14 @@ A small plugin, installed on your site, lets SuricateWeb read what an outside ch
 
 WordPress:
 
-<div class="video-embed" data-youtube="knxh3RBF0HI" data-title="WordPress support" data-play="Play video" data-privacy="The video loads from YouTube only after you click.">
-<a href="https://youtu.be/knxh3RBF0HI">Open on YouTube: WordPress support</a>
+<div class="video-embed" data-youtube="knxh3RBF0HI" data-title="WordPress support (in French)" data-play="Play video" data-privacy="The video is in French. It loads from YouTube only after you click.">
+<a href="https://youtu.be/knxh3RBF0HI">Open on YouTube: WordPress support (in French)</a>
 </div>
 
 PrestaShop:
 
-<div class="video-embed" data-youtube="FWANjLkVHvc" data-title="PrestaShop support" data-play="Play video" data-privacy="The video loads from YouTube only after you click.">
-<a href="https://youtu.be/FWANjLkVHvc">Open on YouTube: PrestaShop support</a>
+<div class="video-embed" data-youtube="FWANjLkVHvc" data-title="PrestaShop support (in French)" data-play="Play video" data-privacy="The video is in French. It loads from YouTube only after you click.">
+<a href="https://youtu.be/FWANjLkVHvc">Open on YouTube: PrestaShop support (in French)</a>
 </div>
 
 :::note
