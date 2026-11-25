@@ -1,0 +1,11 @@
+/* Vidéos YouTube « au clic » (public/video-embed.js). Sans JavaScript, seul le lien de repli apparaît. */
+.video-embed { margin: 1.25rem 0; }
+.video-embed.is-ready { border: 1px solid var(--sl-color-gray-5); border-radius: 0.75rem; padding: 1rem 1.1rem; background: var(--sl-color-bg-nav); }
+.video-embed.is-playing { padding: 0; border: 0; background: none; aspect-ratio: 16 / 9; }
+.video-embed iframe { width: 100%; height: 100%; border: 0; border-radius: 0.75rem; }
+.video-embed .video-play { display: flex; align-items: center; gap: 0.7rem; width: 100%; text-align: left; cursor: pointer; font: inherit; font-weight: 600; color: var(--sl-color-text-accent); background: none; border: 0; padding: 0.2rem 0; }
+.video-embed .video-play:hover .video-label { text-decoration: underline; }
+.video-embed .video-play:focus-visible { outline: 2px solid var(--sl-color-accent); outline-offset: 4px; border-radius: 0.4rem; }
+.video-embed .video-play > span[aria-hidden] { display: inline-grid; place-items: center; flex: none; width: 2.4rem; height: 2.4rem; border-radius: 50%; background: var(--sl-color-accent); color: #fff; font-size: 0.9rem; }
+.video-embed .video-note { display: block; margin: 0.4rem 0 0.2rem 3.1rem; color: var(--sl-color-gray-3); }
+.video-embed.is-ready > a { display: inline-block; margin-left: 3.1rem; font-size: var(--sl-text-sm); }

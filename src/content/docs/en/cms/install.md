@@ -17,6 +17,20 @@ A small plugin, installed on your site, lets SuricateWeb read what an outside ch
    - **PrestaShop**: *Modules › Module Manager › SuricateWeb › Configure*
 5. In SuricateWeb, open the site, **Updates** tab, then click **Refresh**.
 
+**In video**
+
+WordPress:
+
+<div class="video-embed" data-youtube="knxh3RBF0HI" data-title="WordPress support" data-play="Play video" data-privacy="The video loads from YouTube only after you click.">
+<a href="https://youtu.be/knxh3RBF0HI">Open on YouTube: WordPress support</a>
+</div>
+
+PrestaShop:
+
+<div class="video-embed" data-youtube="FWANjLkVHvc" data-title="PrestaShop support" data-play="Play video" data-privacy="The video loads from YouTube only after you click.">
+<a href="https://youtu.be/FWANjLkVHvc">Open on YouTube: PrestaShop support</a>
+</div>
+
 :::note
 SuricateWeb reads the plugin **every 12 hours** by default (adjustable from 1 hour to 7 days). After installing or updating the plugin, click **Refresh** so you do not wait for the next reading.
 :::

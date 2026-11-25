@@ -19,6 +19,10 @@ Les deux ont la même interface, les mêmes contrôles et les mêmes alertes. Ce
 
 La configuration par défaut surveille tout. Si un signal produit trop de bruit sur un site précis (une page qui change tout le temps, par exemple), désactivez-le pour ce site seulement.
 
+<div class="video-embed" data-youtube="gBbZME6zOJY" data-title="Ajouter un nouveau site" data-play="Lire la vidéo" data-privacy="La vidéo est chargée depuis YouTube uniquement après votre clic.">
+<a href="https://youtu.be/gBbZME6zOJY">Ouvrir sur YouTube : Ajouter un nouveau site</a>
+</div>
+
 ## 2. Recevoir les alertes
 
 Sans canal de notification, les alertes restent visibles dans l'onglet **Alertes** mais rien ne vous prévient. Configurez au moins un canal :

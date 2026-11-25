@@ -7,6 +7,10 @@ description: Modified files, backdoors, obfuscated code and new administrator ac
 
 SuricateWeb sees a site's HTML, not its files. The plugin fills that gap: it reads the files **from the site itself**, where they are. The **Security** tab (WordPress and PrestaShop sites) presents the result.
 
+<div class="video-embed" data-youtube="4ANPUIwezE4" data-title="Understanding the Health, Security and Hardening tabs of SuricateWeb" data-play="Play video" data-privacy="The video loads from YouTube only after you click.">
+<a href="https://youtu.be/4ANPUIwezE4">Open on YouTube: Understanding the Health, Security and Hardening tabs of SuricateWeb</a>
+</div>
+
 ## File integrity (WordPress)
 
 | Check | Alert |

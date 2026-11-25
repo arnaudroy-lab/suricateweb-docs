@@ -7,6 +7,10 @@ description: Fichiers modifiés, porte dérobée, code obfusqué et nouveaux com
 
 SuricateWeb voit le HTML d'un site, pas ses fichiers. Le plugin comble ce manque : il lit les fichiers **depuis le site**, là où ils sont. L'onglet **Sécurité** (sites WordPress et PrestaShop) en présente le résultat.
 
+<div class="video-embed" data-youtube="4ANPUIwezE4" data-title="Comprendre les onglets Santé, Sécurité et Durcissement de SuricateWeb" data-play="Lire la vidéo" data-privacy="La vidéo est chargée depuis YouTube uniquement après votre clic.">
+<a href="https://youtu.be/4ANPUIwezE4">Ouvrir sur YouTube : Comprendre les onglets Santé, Sécurité et Durcissement de SuricateWeb</a>
+</div>
+
 ## Intégrité des fichiers (WordPress)
 
 | Contrôle | Alerte |

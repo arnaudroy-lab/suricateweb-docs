@@ -19,6 +19,10 @@ Both have the same interface, the same checks and the same alerts. This document
 
 The default configuration monitors everything. If a signal is noisy on one particular site (a page that changes all the time, for instance), turn it off for that site only.
 
+<div class="video-embed" data-youtube="gBbZME6zOJY" data-title="Add a new site" data-play="Play video" data-privacy="The video loads from YouTube only after you click.">
+<a href="https://youtu.be/gBbZME6zOJY">Open on YouTube: Add a new site</a>
+</div>
+
 ## 2. Receive alerts
 
 Without a notification channel, alerts stay visible in the **Alerts** tab but nothing warns you. Set up at least one channel:

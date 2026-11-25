@@ -17,6 +17,20 @@ Un petit plugin, installé sur votre site, permet à SuricateWeb de lire ce qu'u
    - **PrestaShop** : *Modules › Gestionnaire de modules › SuricateWeb › Configurer*
 5. Dans SuricateWeb, ouvrez le site, onglet **Mises à jour**, puis cliquez sur **Actualiser**.
 
+**En vidéo**
+
+WordPress :
+
+<div class="video-embed" data-youtube="knxh3RBF0HI" data-title="Prise en charge de WordPress" data-play="Lire la vidéo" data-privacy="La vidéo est chargée depuis YouTube uniquement après votre clic.">
+<a href="https://youtu.be/knxh3RBF0HI">Ouvrir sur YouTube : Prise en charge de WordPress</a>
+</div>
+
+PrestaShop :
+
+<div class="video-embed" data-youtube="FWANjLkVHvc" data-title="Prise en charge de PrestaShop" data-play="Lire la vidéo" data-privacy="La vidéo est chargée depuis YouTube uniquement après votre clic.">
+<a href="https://youtu.be/FWANjLkVHvc">Ouvrir sur YouTube : Prise en charge de PrestaShop</a>
+</div>
+
 :::note
 SuricateWeb relève le plugin **toutes les 12 heures** par défaut (réglable de 1 heure à 7 jours). Après l'installation ou une mise à jour du plugin, cliquez sur **Actualiser** pour ne pas attendre le prochain relevé.
 :::

@@ -3,6 +3,10 @@ title: Health and hardening
 description: Disk, debugging, scheduled tasks, HTTPS, and five security settings you can turn on in one click.
 ---
 
+<div class="video-embed" data-youtube="4ANPUIwezE4" data-title="Understanding the Health, Security and Hardening tabs of SuricateWeb" data-play="Play video" data-privacy="The video loads from YouTube only after you click.">
+<a href="https://youtu.be/4ANPUIwezE4">Open on YouTube: Understanding the Health, Security and Hardening tabs of SuricateWeb</a>
+</div>
+
 ## Server health
 
 The **Health** tab: **facts read on the server**, judged by SuricateWeb. The thresholds live in SuricateWeb, so they can change without updating the plugin. The plugin only sends sizes, booleans and durations: never content, nor a file name.

@@ -3,7 +3,9 @@
 //   2. titre et description présents (sauf 404) ;
 //   3. les liens internes écrits dans les pages restent dans leur langue (/…/ en français, /en/… en anglais) ;
 //   4. dans le site construit (dist/) : tous les liens et images internes existent, ancres comprises ;
-//   5. aucun secret évident dans les pages.
+//   5. aucun secret évident dans les pages ;
+//   6. vidéos YouTube « au clic » : identifiants valides, mêmes vidéos en français et en anglais, lien de repli, aucune iframe écrite en dur, script publié,
+//      et politique de sécurité qui n'autorise que youtube-nocookie.com.
 import { readdirSync, readFileSync, existsSync, statSync } from 'node:fs';
 import { join, relative, extname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -75,8 +77,30 @@ if (!existsSync(DIST)) {
   console.log(`${pages.length} pages construites, ${checked} liens et images internes vérifiés.`);
 }
 
+// 6. vidéos YouTube « au clic » (public/video-embed.js) : rien n'est chargé chez YouTube avant le clic
+const read = (p) => readFileSync(join(DOCS, p), 'utf8');
+const videosOf = (p) => [...read(p).matchAll(/data-youtube="([^"]*)"/g)].map((m) => m[1]);
+for (const p of fr) {
+  if (en.has(p) && videosOf(p).join() !== videosOf(`en/${p}`).join()) fail(`${p} : les vidéos diffèrent entre la page française et la page anglaise`);
+}
+let videos = 0;
+for (const p of all) {
+  if (/<iframe/i.test(read(p))) fail(`${p} : iframe écrite en dur (utilisez <div class="video-embed" data-youtube="…">, chargée au clic)`);
+  for (const id of videosOf(p)) {
+    videos++;
+    if (!/^[\w-]{11}$/.test(id)) fail(`${p} : identifiant de vidéo « ${id} » invalide`);
+    if (!read(p).includes(`href="https://youtu.be/${id}"`)) fail(`${p} : vidéo ${id} sans lien de repli (https://youtu.be/${id})`);
+  }
+}
+if (videos) {
+  const csp = readFileSync(join(ROOT, 'security-headers.conf'), 'utf8');
+  if (!/frame-src https:\/\/www\.youtube-nocookie\.com;/.test(csp)) fail('security-headers.conf : frame-src https://www.youtube-nocookie.com manquant (les vidéos seraient bloquées)');
+  if (/frame-src[^;]*(?:\*|youtube\.com)/.test(csp.replace(/youtube-nocookie\.com/g, ''))) fail('security-headers.conf : frame-src trop large (seul youtube-nocookie.com est autorisé)');
+  if (existsSync(DIST) && !existsSync(join(DIST, 'video-embed.js'))) fail('dist/video-embed.js absent : le script des vidéos n\'est pas publié');
+}
+
 if (problems.length) {
   console.error(`\n${problems.length} problème(s) :\n- ${problems.join('\n- ')}`);
   process.exit(1);
 }
-console.log(`OK : ${fr.size} pages en français, ${en.size} en anglais, aucun lien cassé.`);
+console.log(`OK : ${fr.size} pages en français, ${en.size} en anglais, aucun lien cassé, ${videos} vidéo(s) intégrée(s) au clic.`);
