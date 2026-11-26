@@ -5,6 +5,8 @@ description: Installez SuricateWeb sur votre serveur avec Node.js ou Docker, ou 
 
 Le cœur de SuricateWeb est **libre (AGPL-3.0)** : le code est sur [GitHub](https://github.com/arnaudroy-lab/suricateweb). Il fonctionne sans base de données externe (SQLite) et sans dépendance npm.
 
+Le cœur libre surveille la disponibilité, la défiguration, le domaine, le certificat et les captures. Le connecteur [WordPress / PrestaShop](/cms/install/) est une fonction de la version hébergée.
+
 ## Avec Node.js
 
 Prérequis : **Node.js 22.13 ou plus** (Chrome ou Chromium pour les [captures d'écran](/monitoring/screenshots/), facultatif).

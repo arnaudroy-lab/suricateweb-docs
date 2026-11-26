@@ -5,6 +5,8 @@ description: Install SuricateWeb on your server with Node.js or Docker, or deplo
 
 The SuricateWeb core is **free software (AGPL-3.0)**: the code is on [GitHub](https://github.com/arnaudroy-lab/suricateweb). It runs with no external database (SQLite) and no npm dependency.
 
+The free core monitors availability, defacement, the domain, the certificate and screenshots. The [WordPress / PrestaShop](/en/cms/install/) connector is a feature of the hosted version.
+
 ## With Node.js
 
 Prerequisite: **Node.js 22.13 or later** (Chrome or Chromium for [screenshots](/en/monitoring/screenshots/), optional).

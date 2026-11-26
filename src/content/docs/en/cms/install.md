@@ -5,6 +5,10 @@ description: Install the WordPress plugin or the PrestaShop module and link it t
 
 ![Updates tab of a WordPress site in SuricateWeb](../../../../assets/en/mises-a-jour.webp)
 
+:::note
+The WordPress / PrestaShop connector is part of the **hosted version** of SuricateWeb. The free core, which you install on your own server, does not include it.
+:::
+
 A small plugin, installed on your site, lets SuricateWeb read what an outside check cannot see: the PHP version, **updates** to the core, plugins and themes, **file integrity**, administrator accounts and **server health**. The plugin **sends nothing by itself**: SuricateWeb comes to read it, with a token.
 
 ## Installation

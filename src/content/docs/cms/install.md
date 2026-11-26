@@ -5,6 +5,10 @@ description: Installez le plugin WordPress ou le module PrestaShop et reliez-le 
 
 ![Onglet Mises à jour d'un site WordPress dans SuricateWeb](../../../assets/fr/mises-a-jour.webp)
 
+:::note
+Le connecteur WordPress / PrestaShop fait partie de la **version hébergée** de SuricateWeb. Le cœur libre, que l'on installe sur son propre serveur, ne l'inclut pas.
+:::
+
 Un petit plugin, installé sur votre site, permet à SuricateWeb de lire ce qu'un contrôle extérieur ne voit pas : la version de PHP, les **mises à jour** du noyau, des extensions et des thèmes, l'**intégrité des fichiers**, les comptes administrateurs, la **santé du serveur**. Le plugin **n'envoie rien de lui-même** : c'est SuricateWeb qui vient lire, avec un jeton.
 
 ## Installation
