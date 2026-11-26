@@ -3,10 +3,6 @@ title: Journal d'activité
 description: Connexions, comptes et extensions d'un site WordPress, avec adresses IP tronquées et 90 jours de conservation.
 ---
 
-:::note[Version hébergée]
-Cette fonction fait partie du connecteur WordPress / PrestaShop, inclus dans la version hébergée. En auto-hébergement, activez-la avec `SURICATE_CMS=1` (voir [Installer le plugin](/cms/install/)).
-:::
-
 *WordPress, plugin 1.7 ou plus.* L'onglet **Activité** montre ce qui s'est passé sur le site, relevé par le plugin :
 
 - les **connexions** réussies et échouées ;

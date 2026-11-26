@@ -49,7 +49,6 @@ The image includes Chromium for screenshots. The `/data` volume holds **everythi
 | `CHROME_PATH` | detected | Chrome or Chromium for screenshots |
 | `CHROME_WS_URL` | — | **Remote** Chrome (a Browserless container, for example) |
 | `SCREENSHOT_KEEP_DEFAULT` | `168` | Scheduled screenshots kept per site |
-| `SURICATE_CMS` | — | `1`: turns on the WordPress / PrestaShop connector (plugins, readings, site page tabs). **Off by default**: it is a hosted-version feature |
 | `SURICATE_DEMO` | — | `1`: demo mode, fictional data |
 
 The application is **always protected** by a login and password defined only in the environment: it refuses to start without a password. Changing the credentials signs out every session.

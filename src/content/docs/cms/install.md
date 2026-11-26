@@ -3,10 +3,6 @@ title: Installer le plugin
 description: Installez le plugin WordPress ou le module PrestaShop et reliez-le à SuricateWeb avec un jeton.
 ---
 
-:::note[Fonction de la version hébergée]
-Le connecteur WordPress / PrestaShop est **inclus dans la version hébergée**. Dans le cœur auto-hébergé, il est **désactivé par défaut** : activez-le avec `SURICATE_CMS=1` (voir [Auto-hébergement](/self-hosting/)). Désactivé, la fiche d'un site n'affiche ni le formulaire WordPress / PrestaShop, ni les onglets Mises à jour, Sécurité, Santé et Activité, et aucun relevé n'est fait.
-:::
-
 ![Onglet Mises à jour d'un site WordPress dans SuricateWeb](../../../assets/fr/mises-a-jour.webp)
 
 Un petit plugin, installé sur votre site, permet à SuricateWeb de lire ce qu'un contrôle extérieur ne voit pas : la version de PHP, les **mises à jour** du noyau, des extensions et des thèmes, l'**intégrité des fichiers**, les comptes administrateurs, la **santé du serveur**. Le plugin **n'envoie rien de lui-même** : c'est SuricateWeb qui vient lire, avec un jeton.

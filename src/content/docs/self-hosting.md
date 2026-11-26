@@ -49,7 +49,6 @@ L'image contient Chromium pour les captures. Le volume `/data` contient **tout**
 | `CHROME_PATH` | détecté | Chrome ou Chromium pour les captures |
 | `CHROME_WS_URL` | — | Chrome **distant** (conteneur Browserless, par exemple) |
 | `SCREENSHOT_KEEP_DEFAULT` | `168` | Captures planifiées conservées par site |
-| `SURICATE_CMS` | — | `1` : active le connecteur WordPress / PrestaShop (plugins, relevés, onglets de la fiche). **Désactivé par défaut** : c'est une fonction de la version hébergée |
 | `SURICATE_DEMO` | — | `1` : mode démo, données fictives |
 
 L'application est **toujours protégée** par un identifiant et un mot de passe définis uniquement dans l'environnement : elle refuse de démarrer sans mot de passe. Changer les identifiants déconnecte toutes les sessions.

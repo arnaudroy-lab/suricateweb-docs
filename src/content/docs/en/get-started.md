@@ -32,7 +32,7 @@ Without a notification channel, alerts stay visible in the **Alerts** tab but no
 
 ## 3. Go further
 
-- A WordPress or PrestaShop site? With the hosted version, [install the plugin](/en/cms/install/): late updates, modified files, administrator accounts, server health.
+- A WordPress or PrestaShop site? [Install the plugin](/en/cms/install/): late updates, modified files, administrator accounts, server health.
 - Several clients? Sort sites into **groups** (drag and drop) and share a **monthly report** or a public **status page**.
 - A domain with no website (email, reserved name)? Pick the **Domain only** type: only DNS and the registry are monitored.
 

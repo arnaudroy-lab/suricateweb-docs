@@ -3,10 +3,6 @@ title: Widget du tableau de bord
 description: L'état du site affiché dans l'administration de WordPress et de PrestaShop, et la page Données du site.
 ---
 
-:::note[Version hébergée]
-Cette fonction fait partie du connecteur WordPress / PrestaShop, inclus dans la version hébergée. En auto-hébergement, activez-la avec `SURICATE_CMS=1` (voir [Installer le plugin](/cms/install/)).
-:::
-
 Le plugin affiche l'état du site **dans l'administration du CMS** : statut, disponibilité sur 30 jours, alertes ouvertes par gravité, jours restants du certificat et du domaine, et des boutons vers SuricateWeb, le rapport du mois et la page de statut. Les textes suivent la langue de l'administration (français ou anglais).
 
 ## La page du plugin

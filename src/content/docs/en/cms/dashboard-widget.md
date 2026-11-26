@@ -3,10 +3,6 @@ title: Dashboard widget
 description: The site status shown in the WordPress and PrestaShop admin, and the Site data page.
 ---
 
-:::note[Hosted version]
-This feature is part of the WordPress / PrestaShop connector, included in the hosted version. When self-hosting, turn it on with `SURICATE_CMS=1` (see [Install the plugin](/en/cms/install/)).
-:::
-
 The plugin shows the site status **inside the CMS admin**: status, 30-day uptime, open alerts by severity, days left on the certificate and the domain, and buttons to SuricateWeb, the monthly report and the status page. The texts follow the admin language (French or English).
 
 ## The plugin page
